@@ -1,4 +1,4 @@
-# example-angular-chartjs
+# example-verifica
 Ejemplo de integración de angular y chartjs
 
 Video: https://youtu.be/P17o8iI33CM

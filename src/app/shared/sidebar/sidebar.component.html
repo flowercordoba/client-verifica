@@ -1,0 +1,34 @@
+<div
+  class="relative flex h-[calc(100vh-2rem)] w-full max-w-[20rem] flex-col rounded-xl bg-blue-gray-300 bg-clip-border p-4 text--700 shadow-xl shadow-blue-gray-900/5">
+  <nav class="flex min-w-[240px] flex-col gap-1 p-2 font-sans text-base font-normal text-white">
+    <div class="relative block w-full">
+      <div role="button"
+        class="flex items-center w-full p-0 leading-tight transition-all rounded-lg outline-none bg-blue-gray-50/50 text-start text-blue-gray-700 hover:bg-blue-gray-50 hover:bg-opacity-80 hover:text-blue-gray-900 focus:bg-blue-gray-50 focus:bg-opacity-80 focus:text-blue-gray-900 active:bg-blue-gray-50 active:bg-opacity-80 active:text-blue-gray-900">
+        <button type="button"
+          class="flex items-center justify-between w-full p-3 font-sans text-xl antialiased font-semibold leading-snug text-left transition-colors border-b-0 select-none border-b-blue-gray-100 text-blue-gray-900 hover:text-blue-gray-900"
+          (click)="toggleSubMenu()">
+
+          <p class="block mr-auto font-sans text-base antialiased font-normal leading-relaxed text-blue-gray-900"
+            >
+            
+            Verifica
+          </p>
+
+        </button>
+      </div>
+      <div class="overflow-hidden" *ngIf="isSubMenuVisible">
+        <div class="block w-full py-1 font-sans text-sm antialiased font-light leading-normal text-gray-700">
+          <nav class="flex min-w-[240px] flex-col gap-1 p-0 font-sans text-base font-normal text-blue-gray-700">
+            <button class="p-2 text-left hover:bg-blue-gray-100" routerLink="/home/liquidez">Liquidez</button>
+            <button class="p-2 text-left hover:bg-blue-gray-100" routerLink="/home/solvencia">Solvencia</button>
+            <button class="p-2 text-left hover:bg-blue-gray-100" routerLink="/home/rentabilidad">Rentabilidad</button>
+            <button class="p-2 text-left hover:bg-blue-gray-100" routerLink="/home/gestion">Gestion</button>
+            <button class="p-2 text-left hover:bg-blue-gray-100" routerLink="/home/informe">Reporte</button>
+
+          </nav>
+        </div>
+      </div>
+
+    </div>
+  </nav>
+</div>
